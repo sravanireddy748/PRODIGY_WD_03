@@ -1,0 +1,338 @@
+Tic tac toe css
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+	font-family: 'Poppins', sans-serif;
+	text-align: center;
+}
+
+body {
+	display: flex;
+	justify-content: center;
+	background-color: #5e89f7;
+}
+
+.container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	margin: 20px auto;
+	border-radius: 10px;
+	width: 100%;
+	padding: 40px;
+	color: #000000;
+	height: 100%;
+	padding-top: 0px;
+	margin-top: 0px;
+}
+
+h1 {
+	font-size: 36px;
+	margin: 0;
+}
+
+.game-board {
+	display: block;
+	margin: 20px;
+}
+
+.game-section {
+	text-align: center;
+}
+
+.row {
+	display: flex;
+}
+
+.cell {
+	width: 100px;
+	height: 100px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 50px;
+	cursor: pointer;
+	font-weight: 600;
+	user-select: none;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.info-text {
+	font-size: 24px;
+	margin: 30px 0;
+}
+
+#restartButton {
+	font-size: 18px;
+	padding: 10px 20px;
+	background-color: #FED201;
+	color: #23242F;
+	border: 2px solid #000000;
+	border-radius: 10px;
+	cursor: pointer;
+	width: 130px;
+	position: relative;
+	z-index: 999;
+	margin: 20px;
+	font-weight: 500;
+}
+
+#restartButton:hover {
+	background-color: #ffffff;
+}
+
+.vs-button button {
+	font-size: 18px;
+	padding: 15px;
+	border-radius: 10px;
+	border: 0;
+	margin: 20px 20px 0 20px;
+	background-color: #ce8d91;
+	cursor: pointer;
+	width: 150px;
+}
+
+.vs-button button:hover {
+	background-color: #ffffff;
+}
+
+.result-board {
+	display: flex;
+	margin-top: 20px;
+	max-width: 650px;
+	background: #c6260e;
+	border: 2px solid #000000;
+	border-radius: 15px;
+	font-size: 18px;
+	width: 100%;
+}
+
+.result-board div {
+	padding: 5px 10px;
+	text-align: center;
+	width: 33.3%;
+	color: #23242F;
+	font-weight: 500;
+}
+
+.result-board p {
+	height: 50%;
+}
+
+.dim-color {
+	color: rgb(122, 122, 122);
+}
+
+.game-board .row .cell {
+	border: 2px solid #ffffff;
+}
+
+.game-board .row:first-child .cell {
+	border-top: none;
+}
+
+.game-board .row:last-child .cell {
+	border-bottom: none;
+}
+
+.game-board .row .cell:first-child {
+	border-left: none;
+}
+
+.game-board .row .cell:last-child {
+	border-right: none;
+}
+
+#big-heading {
+	font-size: 70px;
+	margin-top: 80px;
+	line-height: 40px;
+	color: #000000;
+}
+
+#sub-heading {
+	font-size: 30px;
+	line-height: 40px;
+}
+
+@media only screen and (max-width: 575px) {
+	.result-board {
+		font-size: 15px;
+	}
+
+	.result-board div {
+		padding: 5px 0px;
+	}
+}
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+	font-family: 'Poppins', sans-serif;
+	text-align: center;
+}
+
+body {
+	display: flex;
+	justify-content: center;
+	background-color: #5e89f7;
+}
+
+.container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	margin: 20px auto;
+	border-radius: 10px;
+	width: 100%;
+	padding: 40px;
+	color: #000000;
+	height: 100%;
+	padding-top: 0px;
+	margin-top: 0px;
+}
+
+h1 {
+	font-size: 36px;
+	margin: 0;
+}
+
+.game-board {
+	display: block;
+	margin: 20px;
+}
+
+.game-section {
+	text-align: center;
+}
+
+.row {
+	display: flex;
+}
+
+.cell {
+	width: 100px;
+	height: 100px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 50px;
+	cursor: pointer;
+	font-weight: 600;
+	user-select: none;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.info-text {
+	font-size: 24px;
+	margin: 30px 0;
+}
+
+#restartButton {
+	font-size: 18px;
+	padding: 10px 20px;
+	background-color: #FED201;
+	color: #23242F;
+	border: 2px solid #000000;
+	border-radius: 10px;
+	cursor: pointer;
+	width: 130px;
+	position: relative;
+	z-index: 999;
+	margin: 20px;
+	font-weight: 500;
+}
+
+#restartButton:hover {
+	background-color: #ffffff;
+}
+
+.vs-button button {
+	font-size: 18px;
+	padding: 15px;
+	border-radius: 10px;
+	border: 0;
+	margin: 20px 20px 0 20px;
+	background-color: #ce8d91;
+	cursor: pointer;
+	width: 150px;
+}
+
+.vs-button button:hover {
+	background-color: #ffffff;
+}
+
+.result-board {
+	display: flex;
+	margin-top: 20px;
+	max-width: 650px;
+	background: #c6260e;
+	border: 2px solid #000000;
+	border-radius: 15px;
+	font-size: 18px;
+	width: 100%;
+}
+
+.result-board div {
+	padding: 5px 10px;
+	text-align: center;
+	width: 33.3%;
+	color: #23242F;
+	font-weight: 500;
+}
+
+.result-board p {
+	height: 50%;
+}
+
+.dim-color {
+	color: rgb(122, 122, 122);
+}
+
+.game-board .row .cell {
+	border: 2px solid #ffffff;
+}
+
+.game-board .row:first-child .cell {
+	border-top: none;
+}
+
+.game-board .row:last-child .cell {
+	border-bottom: none;
+}
+
+.game-board .row .cell:first-child {
+	border-left: none;
+}
+
+.game-board .row .cell:last-child {
+	border-right: none;
+}
+
+#big-heading {
+	font-size: 70px;
+	margin-top: 80px;
+	line-height: 40px;
+	color: #000000;
+}
+
+#sub-heading {
+	font-size: 30px;
+	line-height: 40px;
+}
+
+@media only screen and (max-width: 575px) {
+	.result-board {
+		font-size: 15px;
+	}
+
+	.result-board div {
+		padding: 5px 0px;
+	}
+}

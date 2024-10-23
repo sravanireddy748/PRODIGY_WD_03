@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic-Tac-Toe Game</title>
+    <link rel="stylesheet" href="tic tac toe.css">
+</head>
+<body>
+    <!-- imp Container -->
+    <div class="container">
+
+        <h1 id="big-heading">Tic Tac Toe Game</h1><br>
+        <h2 id="sub-heading"><marquee  direction="right">Select Game Type</marquee></h2><br><br><br>
+        <div class="vs-button">
+            <button id="twoPlayers">2 Players</button><br>
+            <button id="vsComputer">vs AI</button>
+        </div>
+
+        <!--  Container 1 -->
+        <div class="game-section two-players" style="display: none;">
+            <p class="info-text" id="infoText"></p>
+            <div class="game-board">
+                <div class="row">
+                    <div class="cell" onclick="twoPlayerMakeMove(0, 0)"></div>
+                    <div class="cell" onclick="twoPlayerMakeMove(0, 1)"></div>
+                    <div class="cell" onclick="twoPlayerMakeMove(0, 2)"></div>
+                </div>
+                <div class="row">
+                    <div class="cell" onclick="twoPlayerMakeMove(1, 0)"></div>
+                    <div class="cell" onclick="twoPlayerMakeMove(1, 1)"></div>
+                    <div class="cell" onclick="twoPlayerMakeMove(1, 2)"></div>
+                </div>
+                <div class="row">
+                    <div class="cell" onclick="twoPlayerMakeMove(2, 0)"></div>
+                    <div class="cell" onclick="twoPlayerMakeMove(2, 1)"></div>
+                    <div class="cell" onclick="twoPlayerMakeMove(2, 2)"></div>
+                </div>
+            </div>
+        </div>
+
+        <!--  Container 2 -->
+        <div class="game-section vs-computer" style="display: none;">
+            <p class="info-text" id="infoText"></p>
+            <div class="game-board">
+                <div class="row">
+                    <div class="cell" onclick="vsComputerMakeMove(0, 0)"></div>
+                    <div class="cell" onclick="vsComputerMakeMove(0, 1)"></div>
+                    <div class="cell" onclick="vsComputerMakeMove(0, 2)"></div>
+                </div>
+                <div class="row">
+                    <div class="cell" onclick="vsComputerMakeMove(1, 0)"></div>
+                    <div class="cell" onclick="vsComputerMakeMove(1, 1)"></div>
+                    <div class="cell" onclick="vsComputerMakeMove(1, 2)"></div>
+                </div>
+                <div class="row">
+                    <div class="cell" onclick="vsComputerMakeMove(2, 0)"></div>
+                    <div class="cell" onclick="vsComputerMakeMove(2, 1)"></div>
+                    <div class="cell" onclick="vsComputerMakeMove(2, 2)"></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Restart Button -->
+        <button id="restartButton" style="display: none;">Restart</button>
+
+        <!-- Result Section -->
+        <div class="result-board" id="resultBoard" style="display: none;">
+            <div class="win1-count">
+                <p id="p1-label">Player i (X)</p>
+                <p id="win1">0</p>
+            </div>
+            <div class="win2-count">
+                <p id="p2-label">Player ii (O)</p>
+                <p id="win2">0</p>
+            </div>
+            <div class="tie-count">
+                <p>Tie</p>
+                <p id="tie">0</p>
+            </div>
+        </div>
+        
+    </div>
+
+    <script src="tic tac toe.js"></script>
+</body>
+</html>
